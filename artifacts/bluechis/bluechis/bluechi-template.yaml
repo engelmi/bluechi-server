@@ -1,0 +1,16 @@
+apiVersion: org.eclipse.bluechi/v1alpha1
+kind: BlueChiSystem
+metadata:
+  name: car-{{id}}
+status: degraded
+spec:
+  nodes:
+    - name: controll-node
+      status: online
+      lastSeenTimestamp: now
+    - name: worker-node-1
+      status: online
+      lastSeenTimestamp: now
+    - name: worker-node-2
+      status: offline
+      lastSeenTimestamp: 2024-01-10-111111

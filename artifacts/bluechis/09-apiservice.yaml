@@ -1,0 +1,13 @@
+apiVersion: apiregistration.k8s.io/v1
+kind: APIService
+metadata:
+  name: v1alpha1.org.eclipse.bluechi
+spec:
+  insecureSkipTLSVerify: true
+  group: org.eclipse.bluechi
+  groupPriorityMinimum: 1000
+  versionPriority: 15
+  service:
+    name: api
+    namespace: bluechi
+  version: v1alpha1

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bluechi-server
+  namespace: bluechi
+  labels:
+    apiserver: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      apiserver: "true"
+  template:
+    metadata:
+      labels:
+        apiserver: "true"
+    spec:
+      serviceAccountName: apiserver
+      containers:
+      - name: bluechi-server
+        # build from staging/src/k8s.io/bluechi-server/artifacts/simple-image/Dockerfile
+        # or
+        # docker pull registry.k8s.io/e2e-test-images/sample-apiserver:1.17.4
+        # docker tag registry.k8s.io/e2e-test-images/sample-apiserver:1.17.4 kube-sample-apiserver:latest
+        image: quay.io/rh_ee_mengel/kube-sample-apiserver:latest
+        imagePullPolicy: Always
+        args: [ "--etcd-servers=http://localhost:2379" ]
+      - name: etcd
+        image: gcr.io/etcd-development/etcd:v3.5.11
