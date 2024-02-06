@@ -5,8 +5,8 @@
 package bluechi
 
 import (
-	v1alpha1 "k8s.io/bluechi-server/pkg/generated/informers/externalversions/bluechi/v1alpha1"
-	internalinterfaces "k8s.io/bluechi-server/pkg/generated/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/generated/informers/externalversions/bluechi/v1alpha1"
+	internalinterfaces "github.com/engelmi/bluechi-server/pkg/generated/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

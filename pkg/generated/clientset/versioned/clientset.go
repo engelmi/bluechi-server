@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net/http"
 
-	orgv1alpha1 "k8s.io/bluechi-server/pkg/generated/clientset/versioned/typed/bluechi/v1alpha1"
+	orgv1alpha1 "github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned/typed/bluechi/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

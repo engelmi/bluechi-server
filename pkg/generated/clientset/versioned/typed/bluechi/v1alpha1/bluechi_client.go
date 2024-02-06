@@ -7,8 +7,8 @@ package v1alpha1
 import (
 	"net/http"
 
-	v1alpha1 "k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
-	"k8s.io/bluechi-server/pkg/generated/clientset/versioned/scheme"
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
+	"github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

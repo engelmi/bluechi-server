@@ -3,8 +3,8 @@
 package validation
 
 import (
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"k8s.io/bluechi-server/pkg/apis/bluechi"
 )
 
 // ValidateBlueChiSystem validates a BlueChiSystem.

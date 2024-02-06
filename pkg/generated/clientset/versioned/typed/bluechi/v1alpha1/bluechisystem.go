@@ -10,12 +10,12 @@ import (
 	"fmt"
 	"time"
 
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
+	bluechiv1alpha1 "github.com/engelmi/bluechi-server/pkg/generated/applyconfiguration/bluechi/v1alpha1"
+	scheme "github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
-	v1alpha1 "k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
-	bluechiv1alpha1 "k8s.io/bluechi-server/pkg/generated/applyconfiguration/bluechi/v1alpha1"
-	scheme "k8s.io/bluechi-server/pkg/generated/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

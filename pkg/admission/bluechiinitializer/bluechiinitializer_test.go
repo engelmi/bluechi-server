@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/engelmi/bluechi-server/pkg/admission/bluechiinitializer"
+	"github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned/fake"
+	informers "github.com/engelmi/bluechi-server/pkg/generated/informers/externalversions"
 	"k8s.io/apiserver/pkg/admission"
-	"k8s.io/bluechi-server/pkg/admission/bluechiinitializer"
-	"k8s.io/bluechi-server/pkg/generated/clientset/versioned/fake"
-	informers "k8s.io/bluechi-server/pkg/generated/informers/externalversions"
 )
 
 // TestWantsInternalBlueChiInformerFactory ensures that the informer factory is injected

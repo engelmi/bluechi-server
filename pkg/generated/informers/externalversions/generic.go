@@ -7,8 +7,8 @@ package externalversions
 import (
 	"fmt"
 
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	v1alpha1 "k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
 	cache "k8s.io/client-go/tools/cache"
 )
 

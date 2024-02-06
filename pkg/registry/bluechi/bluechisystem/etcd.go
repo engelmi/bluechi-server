@@ -3,12 +3,12 @@
 package bluechisystem
 
 import (
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi"
+	"github.com/engelmi/bluechi-server/pkg/registry"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/registry/generic"
 	genericregistry "k8s.io/apiserver/pkg/registry/generic/registry"
 	"k8s.io/apiserver/pkg/registry/rest"
-	"k8s.io/bluechi-server/pkg/apis/bluechi"
-	"k8s.io/bluechi-server/pkg/registry"
 )
 
 // NewREST returns a RESTStorage object that will work against API services.

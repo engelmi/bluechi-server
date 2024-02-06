@@ -5,8 +5,8 @@ package main
 import (
 	"os"
 
+	"github.com/engelmi/bluechi-server/pkg/cmd/server"
 	genericapiserver "k8s.io/apiserver/pkg/server"
-	"k8s.io/bluechi-server/pkg/cmd/server"
 	"k8s.io/component-base/cli"
 )
 

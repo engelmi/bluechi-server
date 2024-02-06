@@ -5,9 +5,9 @@
 package v1alpha1
 
 import (
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
-	v1alpha1 "k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
 	"k8s.io/client-go/tools/cache"
 )
 

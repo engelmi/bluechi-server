@@ -4,4 +4,4 @@
 // +groupName=org.eclipse.bluechi
 
 // Package bluechi is the internal version of the API.
-package bluechi // import "k8s.io/bluechi-server/pkg/apis/bluechi"
+package bluechi // import "github.com/engelmi/bluechi-server/pkg/apis/bluechi"

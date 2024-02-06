@@ -6,6 +6,7 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi/validation"
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -13,9 +14,8 @@ import (
 	"k8s.io/apiserver/pkg/registry/generic"
 	"k8s.io/apiserver/pkg/storage"
 	"k8s.io/apiserver/pkg/storage/names"
-	"k8s.io/bluechi-server/pkg/apis/bluechi/validation"
 
-	"k8s.io/bluechi-server/pkg/apis/bluechi"
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi"
 )
 
 // NewStrategy creates and returns a bluechiStrategy instance

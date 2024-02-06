@@ -9,12 +9,12 @@ import (
 	sync "sync"
 	time "time"
 
+	versioned "github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned"
+	bluechi "github.com/engelmi/bluechi-server/pkg/generated/informers/externalversions/bluechi"
+	internalinterfaces "github.com/engelmi/bluechi-server/pkg/generated/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	versioned "k8s.io/bluechi-server/pkg/generated/clientset/versioned"
-	bluechi "k8s.io/bluechi-server/pkg/generated/informers/externalversions/bluechi"
-	internalinterfaces "k8s.io/bluechi-server/pkg/generated/informers/externalversions/internalinterfaces"
 	cache "k8s.io/client-go/tools/cache"
 )
 

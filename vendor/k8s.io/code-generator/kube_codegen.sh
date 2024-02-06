@@ -141,6 +141,7 @@ function kube::codegen::gen_helpers() {
         for arg in "${input_pkgs[@]}"; do
             input_args+=("--input-dirs" "$arg")
         done
+        
         "${gobin}/deepcopy-gen" \
             -v "${v}" \
             -O zz_generated.deepcopy \

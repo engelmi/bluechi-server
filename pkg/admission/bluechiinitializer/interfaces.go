@@ -3,8 +3,8 @@
 package bluechiinitializer
 
 import (
+	informers "github.com/engelmi/bluechi-server/pkg/generated/informers/externalversions"
 	"k8s.io/apiserver/pkg/admission"
-	informers "k8s.io/bluechi-server/pkg/generated/informers/externalversions"
 )
 
 // WantsInternalBlueChiInformerFactory defines a function which sets InformerFactory for admission plugins that need it

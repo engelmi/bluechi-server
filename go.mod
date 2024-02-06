@@ -1,4 +1,4 @@
-module k8s.io/bluechi-server
+module github.com/engelmi/bluechi-server
 
 go 1.21
 

@@ -5,11 +5,11 @@
 package fake
 
 import (
+	clientset "github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned"
+	orgv1alpha1 "github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned/typed/bluechi/v1alpha1"
+	fakeorgv1alpha1 "github.com/engelmi/bluechi-server/pkg/generated/clientset/versioned/typed/bluechi/v1alpha1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
-	clientset "k8s.io/bluechi-server/pkg/generated/clientset/versioned"
-	orgv1alpha1 "k8s.io/bluechi-server/pkg/generated/clientset/versioned/typed/bluechi/v1alpha1"
-	fakeorgv1alpha1 "k8s.io/bluechi-server/pkg/generated/clientset/versioned/typed/bluechi/v1alpha1/fake"
 	"k8s.io/client-go/discovery"
 	fakediscovery "k8s.io/client-go/discovery/fake"
 	"k8s.io/client-go/testing"

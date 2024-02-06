@@ -3,10 +3,10 @@
 package install
 
 import (
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi"
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/bluechi-server/pkg/apis/bluechi"
-	"k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
 )
 
 // Install registers the API group and adds types to a scheme

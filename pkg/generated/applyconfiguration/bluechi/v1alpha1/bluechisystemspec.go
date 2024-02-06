@@ -5,7 +5,7 @@
 package v1alpha1
 
 import (
-	v1alpha1 "k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
 )
 
 // BlueChiSystemSpecApplyConfiguration represents an declarative configuration of the BlueChiSystemSpec type for use

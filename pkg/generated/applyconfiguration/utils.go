@@ -5,9 +5,9 @@
 package applyconfiguration
 
 import (
+	v1alpha1 "github.com/engelmi/bluechi-server/pkg/apis/bluechi/v1alpha1"
+	bluechiv1alpha1 "github.com/engelmi/bluechi-server/pkg/generated/applyconfiguration/bluechi/v1alpha1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	v1alpha1 "k8s.io/bluechi-server/pkg/apis/bluechi/v1alpha1"
-	bluechiv1alpha1 "k8s.io/bluechi-server/pkg/generated/applyconfiguration/bluechi/v1alpha1"
 )
 
 // ForKind returns an apply configuration type for the given GroupVersionKind, or nil if no

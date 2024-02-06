@@ -11,10 +11,10 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 
-	"k8s.io/bluechi-server/pkg/apis/bluechi"
-	bluechiinstall "k8s.io/bluechi-server/pkg/apis/bluechi/install"
-	"k8s.io/bluechi-server/pkg/registry"
-	bluechistorage "k8s.io/bluechi-server/pkg/registry/bluechi/bluechisystem"
+	"github.com/engelmi/bluechi-server/pkg/apis/bluechi"
+	bluechiinstall "github.com/engelmi/bluechi-server/pkg/apis/bluechi/install"
+	"github.com/engelmi/bluechi-server/pkg/registry"
+	bluechistorage "github.com/engelmi/bluechi-server/pkg/registry/bluechi/bluechisystem"
 )
 
 var (

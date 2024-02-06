@@ -10,9 +10,9 @@ package v1alpha1
 import (
 	unsafe "unsafe"
 
+	bluechi "github.com/engelmi/bluechi-server/pkg/apis/bluechi"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	bluechi "k8s.io/bluechi-server/pkg/apis/bluechi"
 )
 
 func init() {
